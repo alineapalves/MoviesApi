@@ -36,7 +36,7 @@ function Editar (){
 
         api.put(endereco, values)
             .then ( () =>{
-                navigate('/administrar');
+                navigate('/registro');
             })
     }
 
@@ -54,19 +54,19 @@ function Editar (){
         <form className={styles.Form} onSubmit={onSubmit}>
             <div className={styles.movieForm}>
                 <label htmlFor="title">Titulo</label>
-                <input type="text" id="title" name="title" onChange={onChange} />
+                <input type="text" id="title" name="title" value={values.title} onChange={onChange} />
             </div>
             <div className={styles.movieForm}>
                 <label htmlFor="url">Url do Filme</label>
-                <input type="text" id="url" name="url" onChange={onChange} />
+                <input type="text" id="url" name="url" value={values.url} onChange={onChange} />
             </div>
             <div className={styles.movieForm}>
                 <label htmlFor="image">Url/Imagem</label>
-                <input type="text" id="image" name="image" onChange={onChange} />
+                <input type="text" id="image" name="image" value={values.image} onChange={onChange} />
             </div>
             <div className={styles.movieForm}>
                 <label htmlFor="sinopse">Sinopse</label>
-                <input type="text" id="sinopse" name="sinopse" onChange={onChange} />
+                <input type="text" id="sinopse" name="sinopse" value={values.sinopse} onChange={onChange} />
             </div>
             <button className={styles.Botao} type="submit">Salvar</button>
         </form>

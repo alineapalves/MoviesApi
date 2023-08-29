@@ -30,6 +30,7 @@ const Button = styled.button`
  box-shadow: none;
  margin: 16px;
  cursor: pointer;
+ text-decoration: none;
 `
 const Sinopse = styled.div`
 display: flex;
@@ -47,7 +48,11 @@ const Botao = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: #fff;
 `;
+
+
 
 export default function CaixaFilme ({movies}){
     const [loading, setLoading] = useState(true);
