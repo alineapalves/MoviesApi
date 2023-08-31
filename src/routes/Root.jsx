@@ -5,7 +5,7 @@ import {
     Routes
 } from "react-router-dom";
 import Filme from "../pages/filmes/filme.jsx";
-import Cadastrar from "../pages/cadastrar/cadastro.jsx";
+import Cadastrar from "../pages/Cadastrar/cadastro.jsx";
 import NotFound from "../pages/notfound/not.jsx";
 import Registro from "../pages/registro/index.jsx";
 import Editar from "../pages/Editar/editar.jsx";
