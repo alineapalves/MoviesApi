@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import api from '../../services/api';
 import { useNavigate, useParams } from "react-router-dom";
 import styles from './styles.module.css';
-import { useEffect } from "react";
+
 
 const initialValue = {
     title: '',
@@ -18,7 +18,7 @@ function Editar (){
 
     const navigate = useNavigate();
 
-    const { id } = useParams();
+    const {id} = useParams();
 
     const endereco = `/movies/${id}`;
 
